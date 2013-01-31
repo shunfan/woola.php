@@ -1,0 +1,34 @@
+@import url("bootstrap.min.css");
+@import url("bootstrap-responsive.min.css");
+
+body {
+	background-image: url("fabric.png");
+}
+
+.woola {
+	text-align: center;
+	width: auto;
+	height: auto;
+	max-width: 700px;
+	margin: 60px auto;
+	padding: 30px 20px;
+	border-top: 3px solid #81BA56;
+	border-radius: 4px;
+	-moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+	background-color: #fcfcfc;
+}
+
+#woola {
+	margin: auto;
+	width: 120px;
+	height: 40px;
+	background-size: 120px 40px;
+	background-repeat: no-repeat;
+	background-image: url("woola.png");
+}
+
+.core {
+	padding-top: 30px;
+}

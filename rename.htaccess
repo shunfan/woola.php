@@ -1,0 +1,13 @@
+<FilesMatch ".(gif|jpg|jpeg|png|ico)$">
+	Header set Cache-Control "max-age=604800"
+</FilesMatch>
+
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	RewriteOptions MaxRedirects=1
+	RewriteBase /
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME} !-l
+	RewriteRule ^([a-zA-Z0-9_-]+)$ redirect.php?slug=$1 [L]
+</IfModule>
