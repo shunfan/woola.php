@@ -17,5 +17,7 @@ Woola support:
 
 ## License
 
-MIT License, you can use it personally or commercially as you want.
+The MIT License - PHP codes
+
+Apache License v2.0 - Bootstrap
 
