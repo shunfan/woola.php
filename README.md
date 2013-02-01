@@ -8,7 +8,8 @@ A Succinct URL Shortener.
 Woola support:
 
 * Shorten long links
-* Hits recording
+* Time and hits recording
+* Responsive layout based on Bootstrap
 
 ## But, it is a beta version
 
