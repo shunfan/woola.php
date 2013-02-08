@@ -3,11 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	
-	<title>Woola</title>
+	<title><?php echo $site_name ?></title>
 	
-	<meta name="description" content="Woola is an elegant way to shorten your urls freely and quickly. It can enable your urls to be laconic and you could also share the short urls with your friends easily.">
+	<meta name="description" content="<?php echo $site_introduction ?>">
 	
-	<!-- Mobile viewport optimized -->
+	<!-- Mobile Viewport Optimized -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 	
 	<!-- Style Sheet -->
@@ -16,20 +16,23 @@
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="assets/img/favicon.ico">
 
+	<!-- Google Web Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+
 	<!-- JS -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
 </head>
 <body>
 <div class="container">
-	<div class="row-fluid woola">
+	<div class="row-fluid">
 		<div class="span12">
-			<a href="/"><div id="woola"></div></a>
+			<h1><a href="/"><?php echo $site_name ?></a></h1>
 			<div class="core">
 				<div class="alert alert-success fade in"<?php echo $display; ?>>
 					<button type="button" class="close" data-dismiss="alert">&times;</button>
-					<strong>Well done!</strong> Its short url is <a href="http://woo.la/<?php echo $short_url; ?>">http://woo.la/<?php echo $short_url; ?></a>
-					<button class="btn btn-mini" id="copy-button" data-clipboard-text="http://woo.la/<?php echo $short_url; ?>">Preparing</button>
+					<strong>Well done!</strong> Its short url is <a href="http://<?php echo $site_url ?>/<?php echo $short_url; ?>">http://<?php echo $site_url ?>/<?php echo $short_url; ?></a>
+					<button class="btn btn-mini" id="copy-button" data-clipboard-text="http://<?php echo $site_url ?>/<?php echo $short_url; ?>">Preparing</button>
 				</div>
 				<form method="post" action="/shorten.php" onsubmit="return validate()">
 					<div class="controls">
