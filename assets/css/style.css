@@ -5,7 +5,18 @@ body {
 	background-image: url("fabric.png");
 }
 
-.woola {
+a {
+	color: #49AB5B;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #49AB5B;
+	opacity: 0.8;
+	text-decoration: none;
+}
+
+.container {
 	text-align: center;
 	width: auto;
 	height: auto;
@@ -20,13 +31,9 @@ body {
 	background-color: #fcfcfc;
 }
 
-#woola {
+h1 a {
+	font-family: 'Arvo', serif;
 	margin: auto;
-	width: 120px;
-	height: 40px;
-	background-size: 120px 40px;
-	background-repeat: no-repeat;
-	background-image: url("woola.png");
 }
 
 .core {
