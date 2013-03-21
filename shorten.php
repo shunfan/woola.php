@@ -39,7 +39,7 @@ $judge_original_repeat = mysql_fetch_row($judge_original_repeat);
 
 if(!$judge_original_repeat){
 
-	mysql_query("INSERT INTO $DB_TABLE (original_url, short_url, date) VALUES ('$original_url', '$short_url', '$date')");
+	mysql_query("INSERT INTO redirect (original_url, short_url, date) VALUES ('$original_url', '$short_url', '$date')");
 		
 }
 else{
