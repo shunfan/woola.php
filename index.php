@@ -2,24 +2,11 @@
 <!doctype html>
 <head>
 	<meta charset="utf-8">
-	
 	<title><?php echo $site_name ?></title>
-	
 	<meta name="description" content="<?php echo $site_introduction ?>">
-	
-	<!-- Mobile Viewport Optimized -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-	
-	<!-- Style Sheet -->
 	<link href="assets/css/style.css" rel="stylesheet" media="screen">
-	
-	<!-- Favicon -->
-	<link rel="shortcut icon" href="assets/img/favicon.ico">
-
-	<!-- Google Web Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
-
-	<!-- JS -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
 </head>
